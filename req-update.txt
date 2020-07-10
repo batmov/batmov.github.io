@@ -1,1 +1,1 @@
-[arrdat]&qv2-v.1.0_en-US,no update&qv2-v.1.0_pl-PL,no update
+[arrdat]&qv2-v.1.0_en-US,https://www.google.com/&qv2-v.1.0_pl-PL,no update
