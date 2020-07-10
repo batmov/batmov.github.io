@@ -1,0 +1,3 @@
+[arrdat]
+qv2-v.10_en-US, no update
+qv2-v.10_pl-PL, no update
