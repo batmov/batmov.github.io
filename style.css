@@ -173,3 +173,12 @@ td{
 .screen{
     box-shadow:0 0 10px rgba(0, 0, 0, 0.404);
 }
+#e404{
+    font-family: 'Source Sans Pro', sans-serif;
+    grid:center;
+    text-align:center;
+    margin-top:120px;
+}
+#e404 img{
+    width:160px;
+}
