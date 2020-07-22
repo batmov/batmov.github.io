@@ -126,7 +126,6 @@ main{
     box-shadow:0 0 5px rgba(0, 0, 0, 0.151);
 }
 #banner-holder>#slide-1{
-    background-image: url(media/index-img-fotoview_splash.png);
     overflow: hidden;
     height:250px;
     width:100%;
@@ -181,4 +180,91 @@ td{
 }
 #e404 img{
     width:160px;
+}
+button{
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    padding:5px 15px;
+    background:rgb(153, 0, 59);
+    border:none;
+    border-radius:5px;
+    color:white;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.212);
+}
+button:hover{
+    text-decoration:underline
+}
+button:focus{
+    outline: 1px dashed black;
+}
+h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+input, textarea{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius:2px;
+    padding:5px;
+    transition: 0.5s all;
+}
+input:focus, textarea:focus{
+    box-shadow: 0 2px 10px rgb(153, 0, 59);
+    outline:none;
+    border: 1px solid rgb(153, 0, 59);
+}
+textarea{
+    width:380px;
+    height:120px;
+}
+.tabs{
+    border:1px solid rgb(184, 184, 184);
+    overflow: hidden;
+    border-radius:5px;
+    display:inline-block;
+    overflow: hidden;
+    width: -1px;
+    border-right:none;
+}
+.tabs h5{
+    padding:10px;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-right: 1px solid rgb(184, 184, 184);
+}
+.tabs a{
+    color:black;
+    text-decoration: none;
+}
+.tabs a:hover{
+    text-decoration:underline;
+}
+#targ-ifr{
+    display:none;
+}
+.roundedtab{
+    border:1px solid rgb(187, 187, 187);
+    padding: 10px;
+    border-radius:5px;
+    cursor: pointer;
+}
+.roundedtab>h1{
+    margin-top:15px;
+}
+.roundedtab:hover{
+    border: 1px solid rgb(153, 0, 59);
+}
+.rt-c{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+.roundedtab h6{
+    font-size:24px;
+    font-family: 'Roboto Slab', serif;
+    margin-top:8px;
+    margin-bottom:8px;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Morawiec</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="vscripts/header.js" defer></script>
+    <script src="vscripts/aside.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="vsc-header">
+        Please wait...
+    </header>
+    <div id="limit">
+        <aside id="vsc-aside">
+        </aside>
+        <main>
+            <h1>Contact me</h1>
+            <div class="tabs">
+                <h5><a href="contact.html">Contact</a></h5>
+                <h5><a href="report.html"><b>Report error</b></a></h5>
+            </div>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdAhvcxpbsP-eTN_Di8a-3R8EjOwbI11ZW4irnmccIqL_GIqQ/formResponse" target="target-ifr">
+                <h4>Your name</h4>
+                <input type="text" name="entry.967185976">
+                <h4>Application / website the error occurrs on</h4>
+                <input type="text" name="entry.1320362250">
+                <h4>Error description</h4>
+                <textarea name="entry.1677875774"></textarea><br><br>
+                <button type="submit" onclick="startcheck()">Submit</button>
+                <br><br><h3 id="inf"></h3>
+        </form>
+        <iframe name="target-ifr" id="targ-ifr"></iframe>
+        </main>
+        <script defer>
+            function startcheck(){
+                document.getElementById("inf").innerText = "Message sent!"
+            }
+        </script>
+    </div>
+</body>
+</html>

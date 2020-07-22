@@ -1,8 +1,8 @@
 document.getElementById("vsc-aside").innerHTML = `            
-<a href="https://batmov.github.io/index.html" class="first"><p>Home</p></a>
-<a href="http://batmov.github.io/apps/index.html" class="outter"><p>My apps</p></a>
-    <a href="http://batmov.github.io/apps/fotoview.html" class="inner"><p>FotoView.NET</p></a>
-    <a href="http://batmov.github.io/#" class="inner"><p>CommaLang R&E</p></a>
-<a href="#" class="outter"><p>Repository</p></a>
-    <a href="http://batmov.github.io/#" class="inner"><p>SWF repository</p></a>
-<a href="#" class="outter"><p>Documentation</p></a>`
+<a href="http://127.0.0.1:5500/index.html" class="first"><p>Home</p></a>
+<a href="http://127.0.0.1:5500/apps/index.html" class="outter"><p>Apps</p></a>
+    <a href="http://127.0.0.1:5500/apps/quickvoice.html" class="inner"><p>QuickVoice</p></a>
+<a href="http://127.0.0.1:5500/gethelp" class="outter"><p>Help</p></a>
+<a href="http://127.0.0.1:5500/gethelp/quickvoice.html" class="inner"><p>QuickVoice</p></a>
+<a href="http://127.0.0.1:5500/contact.html" class="outter"><p>Contact</p></a>
+<a href="#" class="outter"><p>About me</p></a>`
