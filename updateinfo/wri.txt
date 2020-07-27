@@ -1,1 +1,2 @@
-[no-updates]
+[no-updates]&
+;;end-document
