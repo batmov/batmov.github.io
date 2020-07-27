@@ -1,2 +1,4 @@
-[no-updates]&
+https://batmov.github.io/apps/quickvoice$*Changed things
+*Added things
+*Deleted things&
 ;;end-document
