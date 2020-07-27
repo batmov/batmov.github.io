@@ -1,2 +1,1 @@
-https://batmov.github.io/apps/quickvoice&
-;;end-document
+[no-updates]&;;end-document
