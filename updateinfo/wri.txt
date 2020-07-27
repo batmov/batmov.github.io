@@ -1,4 +1,2 @@
-https://batmov.github.io/apps/quickvoice$*Changed things
-*Added things
-*Deleted things&
+https://batmov.github.io/apps/quickvoice&
 ;;end-document
