@@ -268,3 +268,7 @@ textarea{
     margin-top:8px;
     margin-bottom:8px;
 }
+::selection{
+	background:rgb(153, 0, 59);
+	color:white;
+}
