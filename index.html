@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bartosz Morawiec</title>
+    <title>batmov</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <script src="vscripts/header.js" defer></script>
-    <script src="vscripts/aside.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/header.js" defer></script>
 </head>
 <body>
-    <header id="vsc-header">
-        Please wait...
-    </header>
-    <div id="limit">
-        <aside id="vsc-aside">
-        </aside>
-        <main>
-            <div id="banner-holder">
-                <div id="slide-1">
+    <main>
+        <header id="header">
+        </header>
+
+        <div class="limiter">
+
+            <div class="article">
+                <a href="apps/quickvoice.html" class="top-banner-link">
                     <img src="media/index-img-quickvoice_splash.png">
+                </a>
+                <div class="article-infobar">
+                    <h6>QuickVoice 1.1</h6>
+                    <h3>QuickVoice allows you to easily turn text into computer speech</h3>
+                    <button onclick="_$('apps/quickvoice.html')">Read more</button>
                 </div>
             </div>
-            <article>
-                <h1>QuickVoice released!</h1>
-                <h3>Updated 22.07.2020, 20:51</h3>
-                <h3>QuickVoice allows you to easily turn text into computer speech</h3>
-                <h3><a class="a" href="downloads/QuickVoice.zip">Download</a> | <a class="a" href="apps/quickvoice.html">Visit project page</a></h3>
-            </article>
-        </main>
-    </div>
+
+            <div class="article">
+                <div class="article-infobar">
+                    <h6>FlashLight 1.0</h6>
+                    <h3>A simple SWF file player for Windows</h3>
+                    <button onclick="_$('apps/flashlight.html')">Read more</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
