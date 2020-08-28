@@ -301,7 +301,6 @@ textarea{
 .tooltip{
 	position: relative;
 	display: inline-block;
-	box-shadow:0 0 10px black;
 }
 .tooltip .tooltiptext{
 	visibility: hidden;
@@ -318,6 +317,7 @@ textarea{
 	left: 50%;
 	margin-left: -60px;
 	font-size:14px;
+box-shadow:0 0 10px rgba(0, 0, 0, 0.205);
 }
 .tooltip .tooltiptext::after {
 	content: " ";
