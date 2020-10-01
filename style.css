@@ -142,7 +142,7 @@ h3{
 	right:20px;
 	top:22px;
 }
-button{
+button:not(.win10btn){
 	background:rgb(207, 207, 207);
 	color:rgb(0, 0, 0);
 	font-family:'Noto Sans', sans-serif;
@@ -151,10 +151,15 @@ button{
 	border:none;
 	border-radius:100px;
 	cursor:pointer;
+	border:1px solid rgb(217,219,219);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+	color:rgb(0, 0, 0);
+	font-weight:700;
 }
 button:hover{
 	background:rgb(153, 0, 59);
 	color:white;
+	border:1px solid rgb(153, 0, 59);
 }
 a{
 	color:rgb(153, 0, 59);
@@ -193,6 +198,7 @@ th, td{
 }
 button:active{
 	background:rgb(116, 0, 44);
+	border:1px solid rgb(116, 0, 44);
 	color:white;
 }
 .nav img{
@@ -254,7 +260,7 @@ h4{
 	margin-top:20px;
 	margin-bottom:5px;
 }
-input,textarea{
+input:not(.win10input),textarea{
 	font-size:14px;
 	font-family:'Noto Sans', sans-serif;
 	border-radius:2px;
@@ -333,4 +339,8 @@ textarea{
 }
 .tooltip a{
 	display:block;
+}
+#result{
+	margin-top:10px;
+	font-weight:700
 }

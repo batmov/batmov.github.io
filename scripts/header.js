@@ -22,6 +22,7 @@ var HEADER_CONTENT = `<a class="header-img-link" href="https://batmov.github.io/
             <a href="https://batmov.github.io/apps/flashlight.html" class="nav"><p>FlashLight SWF Player</p></a>
         </div>
     </div>
+    <a href="https://batmov.github.io/tools/index.html" class="nav"><p>Tools</p></a>
     <a href="https://batmov.github.io/contact.html" class="nav"><p>Contact</p></a>
     <a href="https://batmov.github.io/about.html" class="nav"><p>About me</p></a>
 </nav>`
