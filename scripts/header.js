@@ -4,27 +4,29 @@ var JS_MENU = document.getElementById("js-menu")
 
 var JS_MENU_CONTENT = `<div id="js-menu">
 <div class="js-menu-left">
-<a href="https://batmov.github.io/index.html" class="nav"><p>Start</p></a>
-<a href="https://batmov.github.io/index.html" class="nav"><p>Apps</p></a>
-<a href="https://batmov.github.io/index.html" class="nav"><p>Help</p></a>
-<a href="https://batmov.github.io/index.html" class="nav"><p>Contact</p></a>
+<a href="http://127.0.0.1:5500/index.html" class="nav"><p>Start</p></a>
+<a href="http://127.0.0.1:5500/index.html" class="nav"><p>Apps</p></a>
+<a href="http://127.0.0.1:5500/index.html" class="nav"><p>Help</p></a>
+<a href="http://127.0.0.1:5500/index.html" class="nav"><p>Contact</p></a>
 </div>
 <div class="js-menu-rigt"></div>
 </div>`
 
-var HEADER_CONTENT = `<a class="header-img-link" href="https://batmov.github.io/index.html"><img src="https://batmov.github.io/logo.svg"></a>
+var HEADER_CONTENT = `<a class="header-img-link" href="http://127.0.0.1:5500/index.html"><img src="http://127.0.0.1:5500/logo.svg"></a>
 <nav>
-    <a href="https://batmov.github.io/index.html" class="nav"><p>Start</p></a>
+    <a href="http://127.0.0.1:5500/index.html" class="nav"><p>Start</p></a>
     <div class="dropdown">
-        <a href="https://batmov.github.io/apps/index.html" class="nav" id="nav_ir1"><p>Apps</p></a>
+        <a href="http://127.0.0.1:5500/tools/index.html" class="nav" id="nav_ir1"><p>Projects</p></a>
         <div class="dropdown-content">
-            <a href="https://batmov.github.io/apps/quickvoice.html" class="nav"><p>QuickVoice</p></a>
-            <a href="https://batmov.github.io/apps/flashlight.html" class="nav"><p>FlashLight SWF Player</p></a>
+            <a href="http://127.0.0.1:5500/tools/quickvoice.html" class="nav"><p>QuickVoice</p></a>
+            <a href="http://127.0.0.1:5500/tools/flashlight.html" class="nav"><p>FlashLight SWF Player</p></a>
+            <a href="http://127.0.0.1:5500/tools/wand.html" class="nav"><p>Wand for MC: Edu</p></a>
+            <a href="http://127.0.0.1:5500/tools/divideby.html" class="nav"><p>Check if number is dividable</p></a>
+            <a href="http://127.0.0.1:5500/tools/nativebuttons.html" class="nav"><p>Native buttons</p></a>
         </div>
     </div>
-    <a href="https://batmov.github.io/tools/index.html" class="nav"><p>Tools</p></a>
-    <a href="https://batmov.github.io/contact.html" class="nav"><p>Contact</p></a>
-    <a href="https://batmov.github.io/about.html" class="nav"><p>About me</p></a>
+    <a href="http://127.0.0.1:5500/contact.html" class="nav"><p>Contact</p></a>
+    <a href="http://127.0.0.1:5500/about.html" class="nav"><p>About me</p></a>
 </nav>`
 
 
