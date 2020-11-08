@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batmov</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="../../scripts/header.js" defer></script>
+    <script src="aside.js" defer></script>
+</head>
+<body>
+    <main>
+        <header id="header">
+        </header>
+
+        <div class="limiter">
+
+            <aside id="aside">
+            </aside>
+
+            <div class="right-aside">
+
+                <h1>Alphabet encoder</h1>
+                <h3>This thing allows you to encode and decode between text and arrays of numbers where a = 1 and z = 26</h3>
+                <h3>Input:</h3>
+
+                <textarea class="input" id="input"></textarea><br><br>
+                <button onclick="encode()">Encode</button><button onclick="decode()">Decode</button><br><br>
+
+                <div id="newresult">Result will be displayed here...</div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    var input = document.getElementById("input")
+    var alphabet = [" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    var result = document.getElementById("newresult")
+
+    function encode()
+    {
+        var msg = []
+        var tar = input.value.split("")
+        
+        for (var i = 0; i < tar.length; i++) {
+            
+            msg.push(alphabet.indexOf(tar[i].toLowerCase()))
+
+        }
+
+        result.innerText = msg.join(",")
+
+    }
+
+    function decode(){
+
+        var msg = []
+        var tar = input.value.split(",")
+
+        for (var i = 0; i < tar.length; i++) {
+            
+            msg.push(alphabet[tar[i]])
+
+        }
+
+        result.innerText = msg.join("")
+
+    }
+</script>
+</html>

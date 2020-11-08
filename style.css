@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -49,7 +49,8 @@ table {
 /***/
 
 main{
-    width:900px;
+	width:100%;
+    max-width:900px;
 	margin:0 auto;
 	margin-bottom:100px;
 	background:white;
@@ -68,7 +69,6 @@ header{
 .header-img-link{
 	float:left;
 }
-
 *:focus{
     outline:1px dashed black;
 }
@@ -261,14 +261,14 @@ h4{
 	margin-top:20px;
 	margin-bottom:5px;
 }
-input:not(.win10input),textarea{
+.input{
 	font-size:14px;
 	font-family:'Noto Sans', sans-serif;
 	border-radius:2px;
 	border: 1px solid rgb(184, 184, 184);
 	padding:5px;
 }
-input:focus, textarea:focus{
+.input:focus{
     outline:none;
     border: 1px solid rgb(153, 0, 59);
     box-shadow: inset 0px 0px 5px #c1c1c1;
@@ -297,7 +297,8 @@ textarea{
 	padding-left:7px;
 	padding-top:2px;
 	padding-right:8px;
-    display:inline-block;
+	display:inline-block;
+	margin-bottom:40px;
 }
 .socialmediabar img{
 	height:30px;
@@ -353,4 +354,41 @@ textarea{
 	font-family: 'Source Code Pro', monospace;
 	margin-top:10px;
 	margin-bottom:5px;
+}
+#jsmenutoggle{
+	height:90px;
+}
+#jsmenutoggle>a{
+	margin-top:24px;
+}
+aside{
+	width:200px;
+	vertical-align: top;
+	margin-top:20px;
+	float:left;
+}
+.right-aside{
+	float:left;
+	width:660px;
+}
+#newresult{
+	background:rgb(235, 235, 235);
+	padding:10px;
+	border-radius:5px;
+	line-height:28px;
+	font-size:14px;
+	word-wrap: break-word;
+}
+.input-import{
+	cursor:pointer;
+	color:rgb(153, 0, 59);
+}
+.input-import:hover{
+	text-decoration: underline;
+}
+#import{
+	display:none;
+}
+button+button{
+	margin-left:10px;
 }

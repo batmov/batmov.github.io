@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batmov</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="../../scripts/header.js" defer></script>
+    <script src="aside.js" defer></script>
+</head>
+<body>
+    <main>
+        <header id="header">
+        </header>
+
+        <div class="limiter">
+
+            <aside id="aside">
+            </aside>
+
+            <div class="right-aside">
+
+                <h1>Check if number is dividable by...</h1>
+                <h3>Is...</h3>
+                <form onsubmit="checkNumber(); return false">
+                    <input class="input" id="number" type="number">
+                    <h3><br>Dividable by...</h3>
+                    <input class="input" id="divider" type="number"><br><br>
+                    <button type="submit" >Check</button>
+                </form>
+                <h3 id="result"></h3>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function checkNumber()
+    {
+        var number = document.getElementById("number").value
+        var divider = document.getElementById("divider").value
+        
+        var result = document.getElementById("result")
+
+        if (number % divider === 0)
+        {
+            result.innerText = number + " is dividible by " + divider
+            result.style.color = "green"
+        }
+        else
+        {
+            result.innerText = number + " is not dividible by " + divider
+            result.style.color = "darkred"
+        }
+        
+        if (!number.match(/^[0-9]+$/) || !divider.match(/^[0-9]+$/))
+        {
+            result.innerText = "Enter valid number"
+            result.style.color = "darkred"
+        }
+
+        if (divider == 0)
+        {
+            result.innerText = "Enter valid number"
+            result.style.color = "darkred"
+        }
+
+        return "$"
+    }
+</script>
+</html>
