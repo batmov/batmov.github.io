@@ -3,37 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>batmov</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="scripts/header.js" defer></script>
+    <title>batmov</title>
 </head>
 <body>
+    <header>
+        <div>
+            <p class="socials">bartoszmorawiec5@gmail.com</p>
+            <a class="logo" href="index.html">
+                <img src="logo.svg">
+            </a>
+        </div>
+    </header>
     <main>
-        <header id="header">
-        </header>
+        <img class="banner" src="media/banner.png">
 
-        <div class="limiter">
+        <div class="sorter">
+            <p>Sort by</p>
+            <select onchange="onsortbychange();" id="sortbyselect">
+                <option>(none)</option>
+                <option>C#</option>
+                <option>Java</option>
+                <option>JS</option>
+                <option>Minecraft</option>
+                <option>PL</option>
+                <option>Processing</option>
+                <option>Windows</option>
+            </select>
+            <input id="searchbar" type="text" onkeyup="updatesearch();" placeholder="Search...">
+        </div>
 
-            <div class="article">
-                <a href="tools/wand.html" class="top-banner-link">
-                    <img src="media/wand-splash.png">
-                </a>
-                <div class="article-infobar">
-                    <h6>Wand for Minecraft: Education Edition</h6>
-                    <h3>A plugin for Minecraft: Education Edition that allows you to easily edit your world</h3>
-                    
-                    <button onclick="_$('tools/wand.html')">Read more</button>
-                </div>
-            </div>
-
-            <div class="article">
-                <div class="article-infobar">
-                    <h6>QuickVoice 1.1</h6>
-                    <h3>QuickVoice allows you to easily turn text into computer speech</h3>
-                    <button onclick="_$('tools/quickvoice.html')">Read more</button>
-                </div>
-            </div>
+        <div class="app-sel-container">
+        <div id="app-sel">
+        <div class="app C# Windows">
+            <p>
+                QuickVoice - a Windows speech synthesizer
+                <span class="tag">Windows</span>
+                <span class="tag">C#</span>
+                <a href="quickvoice/">Check it out</a>
+            </p>
+        </div>
+        <div class="app JS Minecraft">
+            <p>
+                Wand for Minecraft Education Edition
+                <span class="tag">JS</span>
+                <span class="tag">Minecraft</span>
+                <a href="wand/">Check it out</a>
+            </p>
+        </div>
+        <div class="app Java Processing">
+            <p>
+                Tic Tac Toe
+                <span class="tag">Java</span>
+                <span class="tag">Processing</span>
+                <a href="tictactoe/">Check it out</a>
+            </p>
+        </div>
+        </div>
         </div>
     </main>
 </body>
+<script>
+
+    function onsortbychange(){
+        var sortbyselect = document.getElementById("sortbyselect");
+        
+        for (var i = 0; i < document.getElementsByClassName("app").length; i++) {
+            document.getElementsByClassName("app").item(i).style.display = "none";
+        }
+        for (var i = 0; i < document.getElementsByClassName(sortbyselect.value.replace("(none)", "app")).length; i++) {
+            document.getElementsByClassName(sortbyselect.value.replace("(none)", "app")).item(i).style.display = "block";
+        }
+    }
+    
+    function updatesearch() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("searchbar");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("app-sel");
+        li = ul.getElementsByTagName("div");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("p")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+</script>
 </html>
