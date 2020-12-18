@@ -110,3 +110,10 @@ input[type=text], input[type=search]{
 #app-sel{
 	margin-top:-1px;
 }
+.error{
+	margin-top:140px;
+	text-align:center;
+}
+.error>img{
+	width:140px;
+}
