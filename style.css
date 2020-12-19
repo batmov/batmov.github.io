@@ -42,7 +42,12 @@ p>a:hover, li>a:hover{
 }
 .socials{
 	float:right;
-	margin-top:25px;
+	margin-top:20px;
+}
+.socials>a{
+	color:black;
+	border-bottom:none;
+	margin:10px 10px;
 }
 .banner{
 	margin-top:18px;
@@ -116,4 +121,10 @@ input[type=text], input[type=search]{
 }
 .error>img{
 	width:140px;
+}
+.about-socialmediabar>a>img{
+	height:25px;
+}
+.about-socialmediabar>a{
+	margin-right:8px;
 }
