@@ -21,6 +21,7 @@ main{
 	padding:0 12px;
 	margin:0 auto;
 	margin-bottom:100px;
+	overflow: hidden;
 }
 p>a, li>a{
 	text-decoration:none;
@@ -101,6 +102,7 @@ input[type=text], input[type=search]{
 }
 .screen{
 	box-shadow:0 0 10px rgba(0, 0, 0, 0.267);
+	max-width:100%;
 }
 .code{
 	background:rgb(240, 240, 240);
