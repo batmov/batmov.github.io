@@ -46,9 +46,21 @@ p>a:hover, li>a:hover{
 	margin-top:20px;
 }
 .socials>a{
+	padding:0 5px;
 	color:black;
 	border-bottom:none;
 	margin:10px 10px;
+	text-transform:lowercase;
+	font-size:20px;
+	background:url(/media/1px.png);
+	background-repeat: no-repeat;
+	background-size: 100% 0px;
+	transition:0.2s background-size, 0.2s color;
+}
+.socials>a:hover{
+	color:white;
+	background-size: 100% 100%;
+	border-bottom:none;
 }
 .banner{
 	margin-top:18px;
