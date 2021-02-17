@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+    <title>MusicDJ / batmov</title>
+</head>
+
+<body onload="InitializeDocument();">
+    <div class="composer">
+        <div class="composer-icons">
+            <span class="tooltip">
+                <img onclick="SelectTrack(0);" src="media/drums.png">
+                <span class="tooltiptext">Bębny</span>
+            </span><br>
+            <span class="tooltip">
+                <img onclick="SelectTrack(1);"  src="media/bass.png">
+                <span class="tooltiptext">Basy</span>
+            </span><br>
+            <span class="tooltip">
+                <img onclick="SelectTrack(2);"  src="media/accords.png">
+                <span class="tooltiptext">Akordy</span>
+            </span><br>
+            <span class="tooltip">
+                <img onclick="SelectTrack(3);"  src="media/accents.png">
+                <span class="tooltiptext">Akcenty</span>
+            </span>            
+        </div>
+        <div id="composer" class="row-container">
+        <div class="composer-row">
+        </div>
+        <div class="composer-row">
+        </div>
+        <div class="composer-row">
+        </div>
+        <div class="composer-row">
+        </div>
+        </div>
+    </div>
+
+    <button class="to-be-disabled" onclick="Play();"><img src="media/play_arrow-24px.svg"><br>Odtwórz</button>
+    <button onclick="PlayerStop();"><img src="media/stop-24px.svg"><br>Zatrzymaj</button>
+    <button class="to-be-disabled"><img onclick="Clear();" src="media/delete_forever-24px.svg"><br>Wyczyść</button>
+    <button class="to-be-disabled"><img onclick="ClpbrdMng('copy');" src="media/content_copy-24px.svg"><br>Kopiuj</button>
+    <button class="to-be-disabled"><img onclick="ClpbrdMng('paste');" src="media/content_paste-24px.svg"><br>Wklej</button>
+
+    <p id="selected-segment">Wybrany segment</p>
+    <select class="to-be-disabled" onchange="UpdateTracks();" id="type-select" size="10">
+        <option value="0">Wstęp</option>
+        <option value="1">Zwrotka</option>
+        <option value="2">Refren</option>
+        <option value="3">Przerwa</option>
+    </select>
+    <select class="to-be-disabled" onchange="UpdateTracks();" id="sound-select" size="10">
+        <option value="none">(pusty)</option>
+        <option value="0">Groove 1</option>
+        <option value="1">Groove 2</option>
+        <option value="2">Salsa 1</option>
+        <option value="3">Salsa 2</option>
+        <option value="4">Reggae 1</option>
+        <option value="5">Reggae 2</option>
+        <option value="6">Techno 1</option>
+        <option value="7">Techno 2</option>
+    </select>
+    <button class="to-be-disabled" onclick="TestSound();">Wytestuj dźwięk</button>
+
+    <br><br>
+
+    <p>Zapisz plik</p>
+    <button onclick="SaveAs();">Zapisz jako</button>
+    <br><br>
+
+    <p>Załaduj plik</p>
+    <input onclick="Stop = true;" id="file-load" type="file">
+</body>
+</html>
