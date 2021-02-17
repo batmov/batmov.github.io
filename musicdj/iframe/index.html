@@ -44,9 +44,9 @@
 
     <button class="to-be-disabled" onclick="Play();"><img src="media/play_arrow-24px.svg"><br>Odtwórz</button>
     <button onclick="PlayerStop();"><img src="media/stop-24px.svg"><br>Zatrzymaj</button>
-    <button class="to-be-disabled"><img onclick="Clear();" src="media/delete_forever-24px.svg"><br>Wyczyść</button>
-    <button class="to-be-disabled"><img onclick="ClpbrdMng('copy');" src="media/content_copy-24px.svg"><br>Kopiuj</button>
-    <button class="to-be-disabled"><img onclick="ClpbrdMng('paste');" src="media/content_paste-24px.svg"><br>Wklej</button>
+    <button onclick="Clear();" class="to-be-disabled"><img src="media/delete_forever-24px.svg"><br>Wyczyść</button>
+    <button onclick="ClpbrdMng('copy');" class="to-be-disabled"><img src="media/content_copy-24px.svg"><br>Kopiuj</button>
+    <button onclick="ClpbrdMng('paste');" class="to-be-disabled"><img src="media/content_paste-24px.svg"><br>Wklej</button>
 
     <p id="selected-segment">Wybrany segment</p>
     <select class="to-be-disabled" onchange="UpdateTracks();" id="type-select" size="10">
