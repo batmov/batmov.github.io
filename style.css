@@ -24,7 +24,7 @@ a:hover{
     color:rgb(139, 139, 255);
 }
 .supertext{
-    font-size:9px;
+    font-size:12px;
 }
 .code{
     font-family:monospace;
@@ -32,6 +32,9 @@ a:hover{
 .result{
     height:200px;
     width:100%;
+}
+.result-p{
+    color:green;
 }
 .grid{
     display:grid;
