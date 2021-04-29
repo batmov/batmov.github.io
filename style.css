@@ -10,7 +10,11 @@ body{
     width: 50%;
 }
 .logo{
-    height:70px;
+    height:100px;
+    transition:0.5s;
+}
+.logo:hover{
+    filter:invert();
 }
 .image{
     width:640px;
@@ -18,10 +22,12 @@ body{
 }
 a{
     text-decoration:none;
-    color:rgb(0, 0, 255);
+    color:rgb(94, 94, 94);
+    display:inline-block;
+    transition:0.2s;
 }
 a:hover{
-    color:rgb(118, 118, 255);
+    color:rgb(165, 165, 165);
 }
 .supertext{
     font-size:12px;
@@ -46,4 +52,7 @@ a:hover{
 }
 .grid>div>img{
     width:100%;
+}
+*:focus-visible{
+	outline:2px solid rgb(115,175,236);
 }
