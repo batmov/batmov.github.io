@@ -1,40 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 
-body{
-    font-family: 'Noto Sans', sans-serif;
-    margin-bottom:200px;
+body {
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    margin-bottom: 100px;
 }
-.text{
+
+.text {
     text-align: left;
     width: 50%;
 }
-.logo{
-    height:100px;
-    transition:0.5s;
+
+
+.logo {
+    height: 100px;
+    transition: 0.5s;
 }
 .logo:hover{
-    filter:invert();
+    filter: invert();
 }
-.image{
-    width:640px;
-    filter:brightness(0.98);
+
+
+.image {
+    border-radius: 5px;
+    width: 640px;
+    filter: brightness(0.98);
+    transition: 0.2s box-shadow;
 }
+.image:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.274);
+}
+
+
 a{
     text-decoration:none;
-    color:rgb(94, 94, 94);
+    color:rgb(58, 37, 255);
     display:inline-block;
     transition:0.2s;
 }
 a:hover{
-    color:rgb(165, 165, 165);
+    text-decoration: underline;
 }
+
+
 .supertext{
     font-size:12px;
 }
+
+
 .code{
     font-family:monospace;
 }
+
+
 .result{
     height:200px;
     width:100%;
@@ -42,6 +60,8 @@ a:hover{
 .result-p{
     color:green;
 }
+
+
 .grid{
     display:grid;
     grid-template-columns: 33% 33% 33%;
@@ -52,7 +72,4 @@ a:hover{
 }
 .grid>div>img{
     width:100%;
-}
-*:focus-visible{
-	outline:2px solid rgb(115,175,236);
 }
