@@ -3,7 +3,7 @@
 
 
 body {
-    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin-bottom: 100px;
 }
 
@@ -17,18 +17,12 @@ body {
 
 
 .logo {
-    height: 100px;
-    transition: 0.5s;
+    margin-top:15px;
+    height: 70px;
 }
-
-.logo:hover{
-    filter: invert();
-}
-
 
 
 .image {
-    border-radius: 5px;
     width: 640px;
     filter: brightness(0.98);
 }
@@ -38,12 +32,12 @@ body {
 
 a {
     text-decoration:none;
-    color:rgb(58, 37, 255);
+    color:#3a25ff;
     display:inline-block;
 }
 
-a:not(.logo-a):hover {
-    opacity: 0.7;
+a:hover {
+    color:#9286ff;
 }
 
 
@@ -64,7 +58,7 @@ a:not(.logo-a):hover {
 }
 
 .result-p {
-    color:green;
+    color:#008000;
 }
 
 
