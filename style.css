@@ -8,12 +8,10 @@ body {
 }
 
 
-
 .text {
     text-align: left;
     width: 50%;
 }
-
 
 
 .logo {
@@ -28,14 +26,11 @@ body {
 }
 
 
-
-
 a {
     text-decoration:none;
     color:#3a25ff;
     display:inline-block;
 }
-
 a:hover {
     color:#9286ff;
 }
@@ -51,16 +46,13 @@ a:hover {
 }
 
 
-
 .result {
     height:200px;
     width:100%;
 }
-
 .result-p {
     color:#008000;
 }
-
 
 
 .grid {
@@ -68,12 +60,16 @@ a:hover {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
-
 .grid>a {
-    padding:8px;
-    margin-left:8px;
+    padding: 8px;
+    margin-left: 8px;
+}
+.grid>a>img {
+    width: 100%;
 }
 
-.grid>a>img {
-    width:100%;
+
+.smbar>a>img {
+    height: 24px;
+    margin: 10px;
 }
